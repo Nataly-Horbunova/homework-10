@@ -1,0 +1,14 @@
+/* Font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Connecting local fonts */
+@import url('fonts.css');
+
+/* Global styles used in several places */
+@import url('global.css');
+
+/* Styles for desktop width */
+@import url('desktop.css');
+
+/* Styles for mobile devices */
+@import url('mobile.css');

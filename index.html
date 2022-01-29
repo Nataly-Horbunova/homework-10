@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hlegals / Services</title>
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./fonts/font.css">
     <!-- Custom Styles-->
-    <link rel="stylesheet" href="./styles/sltyle.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -19,28 +17,44 @@
             <!-- =========== HEADER-SECTION ========= -->
             <header class="header">
                 <div class="logo-subsection">
-                    <img src="./images/header/logo.svg" alt="logo">
-                    <img src="./images/header/slash.svg" alt="slash">
-                    <span class="page-name">послуги</span>
-                    <img src="./images/header/symbol.svg" alt="symbol">
+                    <a href="#">
+                        <img class="logo" src="images/header/logo.svg" alt="logo">
+                    </a>
+                    <img class="logo-slash" src="images/header/slash.svg" alt="slash">
+                    <a href="#" class="page-name">послуги</a>
+                    <img src="images/header/symbol.svg" alt="symbol">
+                    <!-- <label for="nav-trigger" class="nav-open fas fa-bars"></label> -->
                 </div>
 
                 <div class="contacts-and-nav-subsection">
                     <div class="contacts-subsection">
-                        <div class="languages">
-                            <button class="lang-button">УК</button>
-                            <button class="lang-button">РУ</button>
-                            <button class="lang-button">EN</button>
-                        </div>
-                        <div class="dot-separator dot-separator-1"></div>
-                        <span class="address-header">Одеса, Адміральський пр., 3</span>
-                        <div class="dot-separator"></div>
-                        <span class="tel-header">+38 (050) 390 15 91</span>
-                        <div class="dot-separator"></div>
-                        <img src="./images/header/Facebook.svg" alt="Facebook logo">
+                        <ul class="langs-list">
+                            <li class="langs-item">
+                                <button class="lang-button lang-button-active">УК</button>
+                            </li>
+                            <li class="langs-item">
+                                <button class="lang-button">РУ</button>
+                            </li>
+                            <li class="langs-item">
+                                <button class="lang-button">EN</button>
+                            </li>
+                        </ul>
+                        <a href="https://www.google.com.ua/maps/place/Admiral's'kyi+Ave,+Odesa,+Odes'ka+oblast,+65000/@46.4364001,30.7398709,18.42z/data=!4m5!3m4!1s0x40c633bdf4a39a05:0xb1e6dba17641729d!8m2!3d46.4368298!4d30.7362905?hl=en-GB&authuser=0"
+                            target="_blank" class="address-header">
+                            Одеса, Адміральський пр., 3
+                        </a>
+                        <a class="tel-header" href="tel:+380503901591">
+                            +38 (050) 390 15 91
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="./images/header/Facebook.svg" alt="Facebook logo">
+                        </a>
                     </div>
 
+                    <!-- <input id="nav-trigger" type="checkbox" /> -->
+
                     <div class="nav-subsection">
+                        <!-- <label for="nav-trigger" class="nav-close fas fa-times"></label> -->
                         <ul class="nav-menu">
                             <li class="nav-menu-item">
                                 <a class="nav-menu-link" href="#">про нас</a>
@@ -64,111 +78,141 @@
 
             <!-- ========== SERVICES SECTION ======== -->
 
-            <h2 class="services-heading">
+            <p class="services-heading">
                 Що ми вміємо робити краще за інших?
-            </h2>
-            <div class="services-content">
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-commerce.svg" alt="icon commerce" class="icon-img">
+            </p>
+            <ul class="services-cards">
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-commerce.svg" alt="icon commerce"
+                                class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">IT та електронна комерція</h3>
                     </div>
-                    <h3 class="service-title">IT та електронна комерція</h3>
-                    <p class="service-text">Нескінчений потік договорів, податкові питання, трудові відносини,
+                    <p class="card-text">Нескінчений потік договорів, податкові питання, трудові відносини,
                         корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже
                         й багато, щоб наймати інхауз-юриста.
                     </p>
-                </div>
 
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-briefcase.svg" alt="briefcase icon" class="icon-img">
+                </li>
+
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-briefcase.svg" alt="briefcase icon"
+                                class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">Комплексний щоденний юридичний супровід</h3>
                     </div>
-                    <h3 class="service-title">Комплексний щоденний юридичний супровід</h3>
-                    <p class="service-text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста.
+                    <p class="card-text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста.
                         А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
                         інформаційних технологій.
                     </p>
-                </div>
+                </li>
 
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-crowdfunding.svg" alt="crowdfunding icon"
-                            class="icon-img">
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-crowdfunding.svg" alt="crowdfunding icon"
+                                class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">Структуризація корпоративних відносин</h3>
                     </div>
-                    <h3 class="service-title">Структуризація корпоративних відносин</h3>
-                    <p class="service-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу
+                    <p class="card-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу
                         команду, які впишуться в повсякденне життя вашої компанії.
                     </p>
-                </div>
+                </li>
 
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-collaborative.svg" alt="hands together icon"
-                            class="icon-img">
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-collaborative.svg" alt="hands together icon"
+                                class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">Побудовa договірних відносин</h3>
                     </div>
-                    <h3 class="service-title">Побудовa договірних відносин</h3>
-                    <p class="service-text">
+                    <p class="card-text">
                         Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист.
                         Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи
                         замість очікування статусу update.
                     </p>
-                </div>
+                </li>
 
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-safety.svg" alt="safety icon" class="icon-img">
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-safety.svg" alt="safety icon" class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">Захист бізнесу, інтелектуальної власності</h3>
                     </div>
-                    <h3 class="service-title">Захист бізнесу, інтелектуальної власності</h3>
-                    <p class="service-text">
+                    <p class="card-text">
                         А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не
                         зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість
                         корпоративного юриста.
                     </p>
-                </div>
+                </li>
 
-                <div class="sevices-item">
-                    <div class="icon-box">
-                        <img src="./images/services-icons/icon-lawyer.svg" alt="lawer icon" class="icon-img">
+                <li class="sevices-card">
+                    <div class="card-header">
+                        <div class="card-icon-box">
+                            <img src="./images/services-icons/icon-lawyer.svg" alt="lawer icon" class="card-icon-img">
+                        </div>
+                        <h3 class="card-title">Судове представництво</h3>
                     </div>
-                    <h3 class="service-title">Судове представництво</h3>
-                    <p class="service-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес
+                    <p class="card-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес
                         або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?
                     </p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- ============== CASES SECTION ============ -->
     <section class="section-cases">
-        <div class="container cases-continer">
-            <div class="cases-item-and-title">
-                <h2 class="cases-title">Успішні кейси</h2>
-                <div class="cases-item-1">
-                    <p class="cases-text">Супровід проекту з купівлі&#8209;продажу сільськогосподарської продукції</p>
-                    <span class="cases-clients">Hillel IT School</span>
-                </div>
-            </div>
-            <div class="cases-item">
-                <p class="cases-text">Підготовка комплексного юридичного висновку для європейського банку</p>
-                <span class="cases-clients">WannaBiz</span>
-            </div>
-            <div class="cases-item">
-                <p class="cases-text">Супровід проекту з купівлі&#8209;продажу сільськогосподарської продукції</p>
-                <span class="cases-clients">tapgerine</span>
-            </div>
-            <div class="cases-item">
-                <p class="cases-text">Представництво інтересів великого зернотрейдера в податковому спорі</p>
-                <span class="cases-clients">3D LOOK</span>
-            </div>
-            <div class="cases-item">
-                <p class="cases-text">Оскарження податкових повідомлень&#8209;рішень ДФС</p>
-                <span class="cases-clients">adtelligent</span>
-            </div>
-            <div class="cases-item">
-                <p class="cases-text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
-                <span class="cases-clients">Clikky</span>
-            </div>
+        <div class="container">
+            <ul class="cases-list">
+                <li class="cases-item case-hillel">
+                    <h2 class="cases-card cases-title">Успішні кейси</h2>
+                    <a href="#" class="cases-card card-hillel">
+                        <h3 class="case-name">Супровід проекту з купівлі&#8209;продажу сільськогосподарської продукції
+                        </h3>
+                        <span class="case-client">Hillel IT School</span>
+                    </a>
+                </li>
+                <li class="cases-item case-wannabiz">
+                    <a href="#" class="cases-card">
+                        <h3 class="case-name">Підготовка комплексного юридичного висновку для європейського банку</h3>
+                        <span class="case-client">WannaBiz</span>
+                    </a>
+                </li>
+                <li class="cases-item case-tapgerine">
+                    <a href="#" class="cases-card">
+                        <h3 class="case-name">Супровід проекту з купівлі&#8209;продажу сільськогосподарської продукції
+                        </h3>
+                        <span class="case-client">tapgerine</span>
+                    </a>
+                </li>
+                <li class="cases-item case-3dlook">
+                    <a href="#" class="cases-card">
+                        <p class="case-name">Представництво інтересів великого зернотрейдера в податковому спорі</p>
+                        <span class="case-client">3D LOOK</span>
+                    </a>
+                </li>
+                <li class="cases-item case-adtelligent">
+                    <a href="#" class="cases-card">
+                        <p class="case-name">Оскарження податкових повідомлень&#8209;рішень ДФС</p>
+                        <span class="case-client">adtelligent</span>
+                    </a>
+                </li>
+                <li class="cases-item case-clikky">
+                    <a href="#" class="cases-card">
+                        <h3 class="case-name">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
+                        <span class="case-client">Clikky</span>
+                    </a>
+
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -176,45 +220,69 @@
 
     <section class="section-clients">
         <h2 class="clients-title">Вже довіряють нам</h2>
-        <div class="clients">
-            <div class="clients-item hillel-logo">
-                <img src="./images/clients/hillel-logo.png" alt="hillel-logo" class="logo-clients">
-            </div>
-            <div class="clients-item wanna-biz-logo">
-                <img src="./images/clients/wanna-biz-logo.png" alt="wanna-biz-logo" class="logo-clients">
-            </div>
-            <div class="clients-item tapgerine-logo">
-                <img src="./images/clients/tapgerine-logo.svg" alt="tapgerine-logo" class="logo-clients">
-            </div>
-            <div class="clients-item dlook-logo">
-                <img src="./images/clients/3dlook-logo.png" alt="3DLOOK-logo" class="logo-clients">
-            </div>
-            <div class="clients-item orangear-logo">
-                <img src="./images/clients/orangear-logo.svg" alt="orangear-logo" class="logo-clients">
-            </div>
-            <div class="clients-item adtelligent-logo">
-                <img src="./images/clients/adtelligent-logo.svg" alt="adtelligent-logo" class="logo-clients">
-            </div>
-            <div class="clients-item clikky-logo">
-                <img src="./images/clients/clikky-logo.svg" alt="clikky-logo" class="logo-clients">
-            </div>
-            <div class="clients-item ecoleasing-logo">
-                <img src="./images/clients/ecoleasing-logo.png" alt="ecoleasing-logo" class="logo-clients">
-            </div>
-            <div class="clients-item infra-tek-logo">
-                <img src="./images/clients/infra-tek-logo.png" alt="infra-tek-logo" class="logo-clients">
-            </div>
-            <div class="clients-item city-park-logo">
-                <img src="./images/clients/city-park-logo.svg" alt="city-park-logo" class="logo-clients">
-            </div>
-            <div class="clients-item art-print-logo">
-                <img src="./images/clients/art-print-logo.png" alt="art-print-logo" class="logo-clients">
-            </div>
-            <div class="clients-item ultimate-card-logo">
-                <img src="./images/clients/ultimate-card-logo.png" alt="ultimate-card-logo" class="logo-clients">
-            </div>
+        <ul class="clients">
+            <li class="clients-item hillel-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/hillel-logo.png" alt="hillel-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item wanna-biz-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/wanna-biz-logo.png" alt="wanna-biz-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item tapgerine-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/tapgerine-logo.svg" alt="tapgerine-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item dlook-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/3dlook-logo.png" alt="3DLOOK-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item orangear-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/orangear-logo.svg" alt="orangear-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item adtelligent-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/adtelligent-logo.svg" alt="adtelligent-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item clikky-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/clikky-logo.svg" alt="clikky-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item ecoleasing-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/ecoleasing-logo.png" alt="ecoleasing-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item infra-tek-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/infra-tek-logo.png" alt="infra-tek-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item city-park-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/city-park-logo.svg" alt="city-park-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item art-print-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/art-print-logo.png" alt="art-print-logo" class="logo-clients">
+                </a>
+            </li>
+            <li class="clients-item ultimate-card-logo">
+                <a href="#" class="clients-card">
+                    <img src="./images/clients/ultimate-card-logo.png" alt="ultimate-card-logo" class="logo-clients">
+                </a>
+            </li>
 
-        </div>
+        </ul>
     </section>
 
     <!-- ============== FOOTER =============== -->
@@ -222,12 +290,15 @@
         <div class="container footer-container">
             <address class="contacts-footer">
                 <span class="address-footer">Одеса, Адміральський пр., 3</span>
-                <div class="dot-separator footer-dot"></div>
-                <a href="#" class="map">Подивитися на мапі</a>
-                <img class="fb-footer" src="./images/footer/facebook.svg" alt="facebook icon">
-                <div class="dot-separator footer-dot"></div>
-                <a href="tel:+380503901591" class="tel-footer"> +38 (050) 390 15 91</a>
-                <div class="dot-separator footer-dot"></div>
+                <a href="https://www.google.com.ua/maps/place/Admiral's'kyi+Ave,+Odesa,+Odes'ka+oblast,+65000/@46.4364001,30.7398709,18.42z/data=!4m5!3m4!1s0x40c633bdf4a39a05:0xb1e6dba17641729d!8m2!3d46.4368298!4d30.7362905?hl=en-GB&authuser=0"
+                    target="_blank" class="map-footer">
+                    Подивитися на мапі
+                </a>
+
+                <a class="fb-footer" href="#">
+                    <img src="images/footer/facebook.svg" alt="Facebook logo">
+                </a>
+                <a href="tel:+380503901591" class="tel-footer">+38 (050) 390 15 91</a>
                 <a href="mailto:contact@hlegals.net" class="mail-footer">contact@hlegals.net</a>
             </address>
             <div class="copyrights">© 2021 ТОВ Юридична компанія «HLEGALS»</div>
